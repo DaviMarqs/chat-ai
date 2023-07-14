@@ -23,7 +23,7 @@ export function Chat(props: ChatProps) {
   });
 
   return (
-    <Card className="w-[448px]">
+    <Card className="w-[360px] xl:w-[448px]">
       <CardHeader>
         <CardTitle>Chat AI</CardTitle>
         <CardDescription>
@@ -52,7 +52,7 @@ export function Chat(props: ChatProps) {
                 )}
                 <p className="leading-relaxed">
                   <span className="block font-bold text-slate-700">
-                    {message.role === "user" ? "Usuário" : "AI"}:
+                    {message.role === "user" ? "User" : "AI"}:
                   </span>
                   {message.content}
                 </p>
